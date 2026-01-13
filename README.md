@@ -2,6 +2,11 @@
 
 Centralized logging on **AWS EKS** using **Fluent Bit → CloudWatch Logs** with **IRSA (OIDC)** (no static AWS keys).
 
+## Architecture
+
+**PNG (source of truth for GitHub preview)**  
+![Architecture](docs/diagrams/gg-logging-cloudwatch-arch.png)
+
 ## What this does
 - Deploys **Fluent Bit** as a **DaemonSet** in the `logging` namespace
 - Collects container logs from nodes
