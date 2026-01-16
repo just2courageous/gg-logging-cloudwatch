@@ -13,6 +13,9 @@ Centralized logging on **AWS (Amazon Web Services) EKS (Elastic Kubernetes Servi
 - Sends logs to **CloudWatch Logs (Amazon CloudWatch Logs)** group: `/eks/gg/cluster`
 - Uses **IRSA (IAM Roles for Service Accounts)** so pods assume an **IAM (Identity and Access Management)** role securely
 
+## 🎥 Demo (YouTube (video platform))
+- Demo video: **Planned (coming soon)**
+
 ## 📦 Repo layout
 - **[logging/values.yaml](logging/values.yaml)**: Helm (Kubernetes package manager) values (inputs, filters, outputs)
 - **[docs/screenshots/](docs/screenshots/)**: proof screenshots
@@ -39,3 +42,4 @@ kubectl -n logging logs -l app.kubernetes.io/name=fluent-bit --tail=50
 | IRSA (IAM Roles for Service Accounts) role list captured | [p11-irsa-role list.png](docs/screenshots/p11-irsa-role%20list.png) |
 | CloudWatch Logs (Amazon CloudWatch Logs) streams visible | [p11-cloudwatch-log-streams.png](docs/screenshots/p11-cloudwatch-log-streams.png) |
 | CloudWatch Logs (Amazon CloudWatch Logs) console view | [p11-cloudwatch-log-streams-console.png](docs/screenshots/p11-cloudwatch-log-streams-console.png) |
+
